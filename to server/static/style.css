@@ -1,0 +1,25 @@
+div.wrap {
+    width: 100%;
+    /* margin: auto; */
+    /* margin-top: 40%; */
+}
+
+button {
+    width: 100%
+}
+
+
+div.summit {
+    margin-top: 1rem;
+}
+
+.card-all {
+    width: 50%;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 20%;
+}
+
+h1 {
+    margin-bottom: 3%;
+}

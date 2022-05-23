@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stereo to Mono</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <div class="card card-all">
+        <h1>Stereo to Mono</h1>
+        <div class="card wrap align-middle">
+            <form action=" {{url_for('monoizer')}}" method="post" enctype="multipart/form-data">
+                <!-- <label for="file">파일을 골라 넣으세요</label> -->
+                <div class="card-header">파일을 골라 넣으세요</div>
+                <div class="mb-3 card-body summit">
+                    <!-- <label for="formFileMultiple" class="form-label">파일을 골라 넣으세요</label> -->
+                    <input class="form-control" type="file" id="formFileMultiple" multiple name="file" required
+                        accept=".wav">
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-dark">to Mono</button>
+                </div>
+                <!-- <input type="file" name="file" id="" multiple accept=".wav"> -->
+                <!-- <input type="submit" value="To Mono"> -->
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
